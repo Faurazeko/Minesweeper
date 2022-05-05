@@ -1,0 +1,40 @@
+.ms_btn {
+    position: relative;
+    margin: 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.ms_btn::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.ms_btn_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    line-height: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5em;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.megacenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
